@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font1: Verdana, geneva, sans-serif;
+    --font2: 'Sriracha', cursive;
+    --font3:'Shizuru', cursive;
+    --font4:'Licorice', cursive;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgb(224, 11, 11);
+    font-family: var(--font1);
+    
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;/*Primeira letra maior que as maiusculas.*/
+    font-family: var(--font2);
+    font-size: 10vh;
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration-line: none;
+    font-weight: bolder;
+}
+a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding: 10vh;
+    line-height: 2em;/*Espaçamento Duplo entre linhas*/
+    padding-left: 30px;
+    color: black;
+    font-family: var(--font4);
+    font-size: 5vh;
+}
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+section.image{
+    background-color: black;
+    color: white;
+    box-shadow: 6px 6px 13px black;
+    background-size: cover;
+    background-attachment: fixed;/*<<< Efeito imagem fixa >>>*/
+    
+}
+
+section.image > p{
+    background-color: rgba(37, 36, 36, 0.514);
+    display: inline-block;/*Caixa se adapta do tamanho do conteudo*/
+    text-shadow: 1px 1px 0p black;
+    
+}
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    
+    
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
